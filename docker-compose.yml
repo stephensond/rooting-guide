@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  sandbox:
+    container_name: cbb
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - "${PWD}:/cbb"

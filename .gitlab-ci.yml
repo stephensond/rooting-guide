@@ -1,0 +1,24 @@
+stages:
+  - build
+  - run
+
+build_image:
+  image: docker:19.03.13
+  stage: build
+  services:
+      - docker:19.03.13-dind
+  rules:
+    - if: '$CI_PIPELINE_SOURCE != "push"'
+      when: never
+    - changes:
+      - Dockerfile
+  script:
+    - docker login $CI_REGISTRY --username $CI_REGISTRY_USER --password $CI_REGISTRY_PASSWORD
+    - docker build -t $CI_REGISTRY_IMAGE .
+    - docker push $CI_REGISTRY_IMAGE
+
+run_script:
+  image: $CI_REGISTRY_IMAGE:latest
+  stage: run
+  script:
+    - python graph.py
