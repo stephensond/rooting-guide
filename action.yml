@@ -1,5 +1,4 @@
-# action.yml
-name: 'Rooting Guide Image'
+name: 'Rooting Guide'
 description: 'Runs the rooting guide'
 inputs:
   HOST:
@@ -17,7 +16,6 @@ inputs:
   PORT:
     description: 'port'
     required: true
-
 runs:
   using: 'docker'
   image: 'Dockerfile'
