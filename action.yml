@@ -10,3 +10,4 @@ runs:
     DB_USER: "test"
     PASSWORD: "test"
     PORT: "test"
+    TEST_ENV: "hi"
