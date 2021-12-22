@@ -7,4 +7,6 @@ COPY entrypoint.sh /cbb/
 
 RUN pip install --upgrade pip && pip install psycopg2 python-dotenv
 
+RUN chmod +x entrypoint.sh
+
 ENTRYPOINT [ "./entrypoint.sh" ]
