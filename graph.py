@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
+print("hello")
 print(os.getenv("HOST"))
 print(os.getenv("DATABASE"))
 print(os.getenv("DB_USER"))
