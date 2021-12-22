@@ -1,7 +1,30 @@
 # action.yml
 name: 'Rooting Guide Image'
 description: 'Runs the rooting guide'
+inputs:
+  HOST:
+    description: 'host'
+    required: true
+  DATABASE:
+    description: 'database'
+    required: true
+  USER:
+    description: 'user'
+    required: true
+  PASSWORD:
+    description: 'password'
+    required: true
+  PORT:
+    description: 'port'
+    required: true
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  env:
+    HOST: ${{ inputs.HOST }}
+    DATABASE: ${{ inputs.DATABASE }}
+    USER: ${{ inputs.USER }}
+    PASSWORD: ${{ inputs.PASSWORD }}
+    PORT: ${{ inputs.PORT }}
 
