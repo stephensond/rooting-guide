@@ -4,9 +4,9 @@ description: 'Runs the rooting guide'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ env.HOST }}
-    - ${{ env.DATABASE }}
-    - ${{ env.DB_USER }}
-    - ${{ env.PASSWORD }}
-    - ${{ env.PORT }}
+  env:
+    - HOST: ${{ env.HOST }}
+    - DATABASE: ${{ env.DATABASE }}
+    - DB_USER: ${{ env.DB_USER }}
+    - PASSWORD: ${{ env.PASSWORD }}
+    - PORT: ${{ env.PORT }}
