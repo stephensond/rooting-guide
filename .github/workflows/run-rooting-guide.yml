@@ -1,0 +1,17 @@
+name: run-rooting-guide
+on: [push]
+jobs:
+  rooting-guide:
+    environment: rooting-guide
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Run Rooting Guide
+        uses: ./
+        env:
+          HOST: ${{ secrets.HOST }}
+          DATABASE: ${{ secrets.DATABASE }}
+          USER: ${{ secrets.USER }}
+          PASSWORD: ${{ secrets.PASSWORD }}
+          PORT: ${{ secrets.PORT }}
