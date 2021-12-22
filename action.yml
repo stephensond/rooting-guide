@@ -5,8 +5,8 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ secrets.HOST }}
-    - ${{ secrets.DATABASE }}
-    - ${{ secrets.DB_USER }}
-    - ${{ secrets.PASSWORD }}
-    - ${{ secrets.PORT }}
+    - ${{ env.HOST }}
+    - ${{ env.DATABASE }}
+    - ${{ env.DB_USER }}
+    - ${{ env.PASSWORD }}
+    - ${{ env.PORT }}
