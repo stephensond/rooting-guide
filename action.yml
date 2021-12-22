@@ -4,3 +4,9 @@ description: 'Runs the rooting guide'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ secrets.HOST }}
+    - ${{ secrets.DATABASE }}
+    - ${{ secrets.DB_USER }}
+    - ${{ secrets.PASSWORD }}
+    - ${{ secrets.PORT }}
