@@ -5,6 +5,11 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
+print(os.getenv("HOST"))
+print(os.getenv("DATABASE"))
+print(os.getenv("DB_USER"))
+print(os.getenv("PASSWORD"))
+print(os.getenv("PORT"))
 conn = psycopg2.connect(
     host=os.getenv("HOST"),
     database=os.getenv("DATABASE"),
