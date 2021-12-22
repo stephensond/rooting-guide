@@ -1,0 +1,8 @@
+name: run-rooting-guide
+on: [push]
+jobs:
+  rooting-guide:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Rooting guide action
+        uses: ./ # Uses an action in the root directory

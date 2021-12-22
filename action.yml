@@ -1,0 +1,6 @@
+# action.yml
+name: 'Rooting Guide Image'
+description: 'Runs the rooting guide'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
