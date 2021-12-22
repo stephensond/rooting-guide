@@ -5,8 +5,8 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   env:
-    - HOST: "test"
-    - DATABASE: "test"
-    - DB_USER: "test"
-    - PASSWORD: "test"
-    - PORT: "test"
+    HOST: "test"
+    DATABASE: "test"
+    DB_USER: "test"
+    PASSWORD: "test"
+    PORT: "test"
