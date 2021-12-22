@@ -10,7 +10,7 @@ jobs:
       - name: Rooting guide action
         uses: ./ # Uses an action in the root directory
         env:
-          HOST: ${{ secrets.HOST }}
+          HOST: "hello"
           DATABASE: ${{ secrets.DATABASE }}
           DB_USER: ${{ secrets.DB_USER }}
           PASSWORD: ${{ secrets.PASSWORD }}
