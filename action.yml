@@ -4,10 +4,3 @@ description: 'Runs the rooting guide'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  env:
-    HOST: "test"
-    DATABASE: "test"
-    DB_USER: "test"
-    PASSWORD: "test"
-    PORT: "test"
-    TEST_ENV: "hi"
