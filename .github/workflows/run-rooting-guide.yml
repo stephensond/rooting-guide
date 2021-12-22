@@ -7,8 +7,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Rooting guide action
-        uses: ./ # Uses an action in the root directory
+      - name: Run Rooting Guide
+        uses: ./
         env:
           HOST: ${{ secrets.HOST }}
           DATABASE: ${{ secrets.DATABASE }}
