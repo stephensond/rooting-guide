@@ -12,6 +12,6 @@ jobs:
         env:
           HOST: ${{ secrets.HOST }}
           DATABASE: ${{ secrets.DATABASE }}
-          DB_USER: ${{ secrets.DB_USER }}
+          USER: ${{ secrets.USER }}
           PASSWORD: ${{ secrets.PASSWORD }}
           PORT: ${{ secrets.PORT }}
