@@ -21,10 +21,3 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  env:
-    HOST: ${{ inputs.HOST }}
-    DATABASE: ${{ inputs.DATABASE }}
-    USER: ${{ inputs.USER }}
-    PASSWORD: ${{ inputs.PASSWORD }}
-    PORT: ${{ inputs.PORT }}
-

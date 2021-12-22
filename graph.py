@@ -6,11 +6,11 @@ import os
 
 load_dotenv()
 conn = psycopg2.connect(
-    host=os.getenv("HOST"),
-    database=os.getenv("DATABASE"),
-    user=os.getenv("USER"),
-    password=os.getenv("PASSWORD"),
-    port=os.getenv("PORT"))
+    host=os.getenv("INPUT_HOST"),
+    database=os.getenv("INPUT_DATABASE"),
+    user=os.getenv("INPUT_USER"),
+    password=os.getenv("INPUT_PASSWORD"),
+    port=os.getenv("INPUT_PORT"))
 
 cur = conn.cursor()
 cur.execute("SELECT * from games")
