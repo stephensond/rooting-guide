@@ -15,4 +15,4 @@ jobs:
           DB_USER: ${{ secrets.DB_USER }}
           PASSWORD: ${{ secrets.PASSWORD }}
           PORT: ${{ secrets.PORT }}
-          TESTING: ${{ secrets }}
+          TESTING: ${{ env.HOST }}
