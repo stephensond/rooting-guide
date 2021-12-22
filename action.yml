@@ -4,7 +4,4 @@ description: 'Runs the rooting guide'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  env:
-    TEST: "test"
-    ANOTHER: ${{ env.TEST }}
 
