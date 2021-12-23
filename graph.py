@@ -52,7 +52,6 @@ map2 = []
 
 
 def root_for_help(teams, team1, team2, schedules, order):
-    print(order)
     newteams = []
     order1_count = 0
     order2_count = 0
@@ -69,16 +68,8 @@ def root_for_help(teams, team1, team2, schedules, order):
             newteams.append(nextteam)
 
     if order1_count > order2_count:
-        print(map1)
-        print(map2)
-        print(order1_count)
-        print(order2_count)
         return team1
     elif order2_count > order1_count:
-        print(map1)
-        print(map2)
-        print(order1_count)
-        print(order2_count)
         return team2
     else:
         return root_for_help(newteams, team1, team2, schedules, order + 1)
@@ -86,14 +77,10 @@ def root_for_help(teams, team1, team2, schedules, order):
 
 # what about infinite loops?????
 def root_for_help_2(teams, team1, schedules, order):
-    print(order)
     newteams = []
     order1_count = 0
     i = 0
     for team in teams:
-
-        if i % 100000 == 0:
-            print(str(i) + 'teams processed')
 
         i += 1
         for nextteam in schedules[team]:
