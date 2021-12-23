@@ -2,7 +2,6 @@ name: run-rooting-guide
 on: [push, pull_request, workflow_dispatch]
 jobs:
   rooting-guide:
-    environment: rooting-guide
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
