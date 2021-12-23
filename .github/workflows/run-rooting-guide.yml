@@ -14,6 +14,6 @@ jobs:
           user: ${{ secrets.USER }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          favorite_team: "replace me"
-          team_one: "replace me"
-          team_two: "replace me"
+          favorite_team: "Northeastern"
+          team_one: "Lamar"
+          team_two: "Lehigh"
