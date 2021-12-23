@@ -1,20 +1,29 @@
 name: 'Rooting Guide'
 description: 'Runs the rooting guide'
 inputs:
-  HOST:
+  host:
     description: 'host'
     required: true
-  DATABASE:
+  database:
     description: 'database'
     required: true
-  USER:
+  user:
     description: 'user'
     required: true
-  PASSWORD:
+  password:
     description: 'password'
     required: true
-  PORT:
+  port:
     description: 'port'
+    required: true
+  favorite_team:
+    description: 'favorite team'
+    requred: true
+  team_one:
+    description: 'team 1'
+    required: true
+  team_two:
+    description: 'team 2'
     required: true
 runs:
   using: 'docker'
