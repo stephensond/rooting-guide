@@ -122,5 +122,5 @@ for team in correct_schedules:
         min[1] = count
         least_favorite_team = str(team)
 
-print(root_for(os.getenv("INPUT_HOST"), os.getenv("INPUT_TEAM_ONE"),
+print(root_for(os.getenv("INPUT_FAVORITE_TEAM"), os.getenv("INPUT_TEAM_ONE"),
                os.getenv("INPUT_TEAM_TWO"), correct_schedules))
